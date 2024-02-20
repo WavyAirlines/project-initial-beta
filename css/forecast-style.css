@@ -1,6 +1,6 @@
 body {
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 header {
@@ -17,10 +17,10 @@ table {
   width: 100%;
 }
 
-h1 {
+/* h1 {
   text-align: center;
   justify-self: left;
-}
+} */
 
 caption {
   display: flex;
@@ -30,8 +30,8 @@ caption {
   align-items: center;
 }
 
-i {
-  background-color: blue;
+caption i {
+  background-color: lightblue;
   color: rgb(255, 255, 255);
   font-size: 1.5rem;
   right: 0;
@@ -42,8 +42,8 @@ i {
   padding-top: 5px;
   table-layout: fixed;
   padding: 1rem;
-  max-width: 100%;
-  max-height: 70%;
+  /* max-width: 100%;
+  max-height: 70%; */
 }
 
 nav {
@@ -193,3 +193,78 @@ tr:nth-child(7) > th:nth-child(5) > span:nth-child(2),
 tr:nth-child(8) > th:nth-child(4) > span:nth-child(2) {
   background-color: #f26322;
 }
+
+/* cam code starts */
+.tp {
+  position:relative;
+  top:75px;
+  border-top: 1px solid #ccc;
+padding: 1rem;
+margin: 0px 50px 0px 50px ;
+font-family: Arial, Helvetica, sans-serif;
+
+  
+}
+footer { 
+  display: inline-flex;
+position:relative;
+top:75px;
+background-color: #eaf9fd6e;
+align-items: center;
+justify-content: space-between;
+width:100%;
+}
+footer h3 { 
+  margin-left: 1.3em;
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer p {
+  position: relative;
+  text-align: center;
+  top:10px;
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.flex{
+   display: flex;
+align-items: center;
+}
+footer i {
+margin-left: 1.3em;
+}
+footer i:hover {
+  color: lightblue;
+  transition: 0.3s;
+  cursor: pointer;
+}
+footer h3:hover {
+  color: lightblue;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.modelTime{
+  position: relative;
+  margin-left: 10px;
+  top:50px;
+  float:right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  margin-left: 50px;
+}
+.aboutus{
+  position:relative;
+  top:75px;
+   border-top: 1px solid #ccc;
+   margin: 0px 50px 0px 50px ;
+   font-family: Arial, Helvetica, sans-serif;
+   padding:1em
+
+}
+.bold{
+  font-weight:bold ;
+}
+/* .end {
+float: right;
+} */
