@@ -1,0 +1,249 @@
+@font-face {
+  font-family: "Gilroy-Black";
+  src: url("/assets/fonts/Gilroy-Black.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy-Black";
+  background-image: url("/assets/images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+button {
+  font-family: "Gilroy-Black";
+}
+
+header {
+  display: flex;
+  height: 10vh;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+}
+
+.hamburger {
+  content: none;
+}
+
+#hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  max-width: 15vh;
+}
+
+.logo {
+  font-weight: 400;
+  margin: 4px;
+}
+
+.logo-container,
+.nav-links,
+.cart {
+  display: flex;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+nav {
+  flex: 2;
+}
+
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link {
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.presentation {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.cover img {
+  width: 50vw;
+  height: 60vh;
+  border-radius: 5px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.introduction {
+  color: white;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: end;
+}
+
+.cover {
+  top: 5vh;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cover-text {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: baseline;
+  bottom: 0;
+  padding-left: 2%;
+  color: antiquewhite;
+}
+
+.intro-text {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro-text h1 {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.intro-text p {
+  margin-top: 5px;
+  font-size: 2em;
+  color: white;
+}
+
+.cta {
+  padding: 25px 0 0 0;
+}
+
+.cta-select {
+  border-radius: 15px;
+  border: 4px solid #b2cdebff;
+  background: transparent;
+  color: rgb(113, 171, 237);
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  align-items: center;
+  font-size: 1.5em;
+
+  -webkit-box-shadow: 0 0 5px #b2cdebff;
+  -moz-box-shadow: 0 0 5px #b2cdebff;
+  box-shadow: 0 0 5px #b2cdebff;
+}
+
+.hamburger-menu {
+  display: none;
+  margin-left: auto;
+  right: 5%;
+  height: 30px;
+  width: 60px;
+  position: absolute;
+  transform: rotate(90deg);
+}
+
+span {
+  width: 100%;
+  font-size: 1.7rem;
+  font-weight: 100;
+  height: 10px;
+  background-color: black;
+  border-radius: 10px;
+  top: 50%;
+  left: 20%;
+  transition: all 0.3s ease-in;
+}
+
+.hamburger-menu span:nth-child(1) {
+  top: 25%;
+}
+
+.hamburger-menu span:nth-child(3) {
+  top: 5%;
+}
+
+
+
+
+
+/* Forecast Page */
+
+.forecast-table {
+  display: flex;
+  margin: auto;
+  padding: 2%;
+  height: 80vh;
+  width: 80vw;
+}
+
+
+
+@media (min-width: 350px) and (max-width: 1024px) {
+  body {
+    background-image: url("/assets/images/live.jpg");
+  }
+
+  .cover {
+    margin-right: auto;
+    top: 57vh;
+    flex: 1;
+  }
+  .cover img {
+    display: none;
+  }
+  .cover-text {
+    flex-wrap: nowrap;
+    position: absolute;
+    bottom: 0;
+    color: antiquewhite;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.477);
+  }
+  header {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+  }
+  nav {
+    
+  }
+
+  .nav-link{
+    display: none;
+  }
+
+  .hamburger-menu {
+    z-index: 9;
+    display: block;
+  }
+
+  .nav-link {
+    color: rgb(0, 0, 0);
+  }
+
+  .introduction {
+    display: none;
+  }
+}
