@@ -117,20 +117,23 @@ nav {
 }
 
 .intro-text {
+  margin-top: 18vh;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: column;
+  text-align: center;
   align-items: center;
+  width: 20vw;
 }
 
 .intro-text h1 {
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: 500;
 }
 
 .intro-text p {
   margin-top: 5px;
-  font-size: 2em;
+  font-size: 2.2em;
   color: white;
 }
 
@@ -200,6 +203,34 @@ span {
 
 
 
+@media (max-width: 1270px){
+  .intro-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+    margin-top: 15vh;
+  }
+  
+  .intro-text h1 {
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .intro-text p {
+    text-align: right;
+    margin-top: 5px;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+  }
+  
+}
+
+
 @media (min-width: 350px) and (max-width: 1024px) {
   body {
     background-image: url("/assets/images/live.jpg");
@@ -225,9 +256,6 @@ span {
     width: 100%;
     height: 10vh;
     position: fixed;
-  }
-  nav {
-    
   }
 
   .nav-link{
