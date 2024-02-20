@@ -42,6 +42,7 @@ caption i {
   padding-top: 5px;
   table-layout: fixed;
   padding: 1rem;
+  height: auto;
   /* max-width: 100%;
   max-height: 70%; */
 }
@@ -246,7 +247,7 @@ footer h3:hover {
 
 .modelTime{
   position: relative;
-  margin-left: 10px;
+  margin-right: 50px;
   top:50px;
   float:right;
   font-family: Arial, Helvetica, sans-serif;
@@ -264,6 +265,16 @@ footer h3:hover {
 }
 .bold{
   font-weight:bold ;
+}
+aside i {
+  background-color: black;
+  color:white;  
+}
+aside i:hover {
+  background-color: lightblue;
+color:black;
+transition: 0.3s;
+cursor: pointer;
 }
 /* .end {
 float: right;
